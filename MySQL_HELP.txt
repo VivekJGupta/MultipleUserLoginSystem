@@ -1,0 +1,27 @@
+
+
+MariaDB [vivek]> desc reset_table;
++---------+----------+------+-----+-------------------+----------------+
+| Field   | Type     | Null | Key | Default           | Extra          |
++---------+----------+------+-----+-------------------+----------------+
+| id      | int(11)  | NO   | PRI | NULL              | auto_increment |
+| email   | text     | NO   |     | NULL              |                |
+| token   | text     | NO   |     | NULL              |                |
+| expdate | datetime | NO   |     | CURRENT_TIMESTAMP |                |
++---------+----------+------+-----+-------------------+----------------+
+
+
+
+
+MariaDB [vivek]> desc users;
++------------+--------------+------+-----+-------------------+----------------+
+| Field      | Type         | Null | Key | Default           | Extra          |
++------------+--------------+------+-----+-------------------+----------------+
+| id         | int(11)      | NO   | PRI | NULL              | auto_increment |
+| created_at | datetime     | YES  |     | CURRENT_TIMESTAMP |                |
+| NAME       | varchar(100) | YES  |     | NULL              |                |
+| email      | varchar(100) | YES  | UNI | NULL              |                |
+| PASSWORD   | varchar(20)  | YES  |     | NULL              |                |
+| city       | varchar(50)  | YES  |     | NULL              |                |
+| state      | varchar(50)  | YES  |     | NULL              |                |
++------------+--------------+------+-----+-------------------+----------------+
