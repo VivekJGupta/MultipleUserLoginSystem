@@ -71,17 +71,17 @@
                 $mail->isSMTP();                                            //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                $mail->Username   = 'vivekjgupta90@gmail.com';                     //SMTP username
-                $mail->Password   = 'HukkaLala';                               //SMTP password
+                $mail->Username   = 'vivekgupta90@gmail.com';                     //SMTP username
+                $mail->Password   = '';                               //SMTP password
                 $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;      //ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
                 $mail->Port       = 587;       //465;                        //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
                 //Recipients
-                $mail->setFrom('vivek@itvedant.com', 'ITVEDANT');
-                $mail->addAddress('vivekjgupta90@gmail.com',);     //Add a recipient
+                $mail->setFrom('vivek@domain.com', 'Vivek');
+                $mail->addAddress('vivekgupta90@gmail.com',);     //Add a recipient
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
-                $mail->Subject = 'Password Reset - ITVEDANT';
+                $mail->Subject = 'Password Reset - Vivek';
                 $mail->Body    = $body;
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                 
